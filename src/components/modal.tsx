@@ -22,9 +22,9 @@ const Modal = ({ post, children, ...props }: Props) => {
                 {children}
             </Dialog.Trigger>
             <Dialog.Portal >
-                <Dialog.Overlay className='fixed bg-black/60 inset-0 z-10' />
+                <Dialog.Overlay className='fixed bg-black/60 inset-0 z-[51]' />
                 <Dialog.Content className='bg-white fixed left-1/2 top-1/2  
-                -translate-y-1/2 -translate-x-1/2 w-screen max-w-lg px-8 py-4 z-10 rounded-lg'>
+                -translate-y-1/2 -translate-x-1/2 w-screen max-w-lg px-8 py-4 z-[51] rounded-lg'>
                     <Dialog.Close asChild>
                         <button
                             type="button"

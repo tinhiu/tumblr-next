@@ -26,7 +26,7 @@ export default function Navbar(props: Props) {
 					<button onClick={handleClickLogo}>
 						<Image src={logo} alt='logo' style={{ width: '26px', height: '26px' }} />
 					</button>
-					<Link href={'https://github.com/tinhiu'} target='_blank'>
+					<Link href={'https://github.com/tinhiu/tumblr-next'} target='_blank'>
 						<Image src={github} alt='github' style={{ width: '26px', height: '26px' }} />
 					</Link>
 				</nav>

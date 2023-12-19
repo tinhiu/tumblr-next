@@ -18,13 +18,13 @@ function ModalImage({ image, children }: Props) {
                 {children}
             </Dialog.Trigger>
             <Dialog.Portal>
-                <Dialog.Overlay className='bg-black/80 opacity-100 fixed flex top-0 left-0 bottom-0 right-0 justify-center items-center z-50 inset-0' />
-                <Dialog.Content className='min-h-screen z-50 fixed left-1/2 top-1/2  
+                <Dialog.Overlay className='bg-black/80 opacity-100 fixed flex top-0 left-0 bottom-0 right-0 justify-center items-center z-[52] inset-0' />
+                <Dialog.Content className='min-h-screen z-[52] fixed left-1/2 top-1/2  
                 -translate-y-1/2 -translate-x-1/2 w-fit'>
                     <Dialog.Close asChild>
                         <button
                             type="button"
-                            className={`z-[52] absolute rounded-md p-4 inline-flex items-center justify-center outline-none border-0 text-white top-0  ${zoom ? 'right-8' : 'right-4'}`}
+                            className={`z-[53] absolute rounded-md p-4 inline-flex items-center justify-center outline-none border-0 text-white top-0  ${zoom ? 'right-8' : 'right-4'}`}
                         >
                             <svg
                                 className="h-6 w-6"
@@ -59,52 +59,7 @@ function ModalImage({ image, children }: Props) {
                             </div>
                         </div>
                     </div>
-
                 </Dialog.Content>
-                {/* <Dialog.Content className='min-h-screen z-50 fixed left-1/2 top-1/2  
-                -translate-y-1/2 -translate-x-1/2 w-screen'>
-                    <div className='fixed h-full top-0 left-0 w-full z-[51]'>
-                        <Dialog.Close asChild>
-                            <button
-                                type="button"
-                                className="z-[52] absolute rounded-md p-4 inline-flex items-center justify-center outline-none border-0 text-white top-0 right-4"
-                            >
-                                <svg
-                                    className="h-6 w-6"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                    aria-hidden="true"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M6 18L18 6M6 6l12 12"
-                                    />
-                                </svg>
-                            </button>
-                        </Dialog.Close>
-                        <div className='relative m-auto h-full z-[51] '>
-                            <div className='inline-block max-h-full max-w-full'>
-                                <div className={`h-full absolute top-0 w-screen flex justify-center items-center transition-all ${zoom ? 'sm:items-baseline overflow-auto' : ''}`}>
-                                    <div className='relative '>
-                                        <Image src={image}
-                                            alt='photo-post'
-                                            sizes={`(max-width: 1920px) 100vw, 1920px`}
-                                            width={`${zoom ? window.innerWidth + 50 : 1920}`}
-                                            height={`${zoom ? window.innerWidth : 1920}`}
-                                            className={`box-border mx-auto transition-all ${zoom ? 'pointer-events-none lg:pointer-events-auto hover:cursor-zoom-out lg:max-w-[inherit] max-h-[inherit] m-0' : 'hover:cursor-zoom-in h-screen max-h-screen max-w-[100vw] w-fit'}`}
-                                            onClick={() => setZoom(!zoom)}
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </Dialog.Content> */}
             </Dialog.Portal>
         </Dialog.Root>
     );

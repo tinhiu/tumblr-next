@@ -78,7 +78,7 @@ export default function MainComponent() {
                             <a href='https://www.tumblr.com/docs/en/api/v2' target='_blank'
                                 className='underline'>Tumblr API</a>
                         </h1>
-                        <h6>(hanavbara, ryokoxdd, simzart, feefal, brandirecognition...)</h6>
+                        <h6>(hanavbara, ryokoxdd, tofublock, feefal, onzze, geee13...)</h6>
                     </div>
                     <form
                         ref={ref}
